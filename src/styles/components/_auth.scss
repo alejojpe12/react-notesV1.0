@@ -1,0 +1,64 @@
+.auth__main {
+    align-items: center;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.auth__box-container {
+    background-color: white;
+    box-shadow: 15px 15px 0px 0px rgba(8, 8, 8, 0.966);
+    // border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+}
+
+.auth__title {
+    color: darken($color: $primary, $amount: 20);
+    margin-bottom: 20px;
+    font-weight: 1;
+    font-size: 25px;
+}
+
+.auth__input {
+    color: $dark-grey;
+    border: 0;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px ;
+    transition: box-shadow .4s ease-in-out;
+
+
+
+        &:focus {
+        box-shadow: 0 0 11px $primary;
+        outline: none;
+        }
+}
+
+.auth__social-networks {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.auth__alert-error {
+    background-color: red;
+    border-radius: 54px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px; 
+}
+
+
