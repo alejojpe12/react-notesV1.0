@@ -57,7 +57,7 @@ export const AppRouter = () => {
             <div>
                 <Switch>
                     <PublicRoute 
-                        path="/auth"
+                        path="/react-notes/auth"
                         component={ AuthRouter }
                         isAuthenticated={isLoggedIn}
                     />
@@ -65,12 +65,12 @@ export const AppRouter = () => {
                     <PrivateRoute 
                         exact
                         isAuthenticated={isLoggedIn}
-                        path="/"
+                        path="/react-notes"
                         component={ JournalScreen }
                         
                     />
 
-                <Redirect to='/auth/login'/>
+                <Redirect to='/react-notes/auth/login'/>
 
                 </Switch>
             </div>
